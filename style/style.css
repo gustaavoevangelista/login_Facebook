@@ -1,0 +1,32 @@
+body{
+    font-family: Helvetica;
+    background: #F0F2F5;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#esquerda{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: #1877F2;
+}
+
+.texto{
+    font-size: 25px;
+    color: black;
+}
+
+#direita{
+    background: white;
+}
+
+footer{
+    color: #737373;
+    font-size: 12px;
+}
