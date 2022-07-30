@@ -7,10 +7,11 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+
     
 }
 
-#esquerda{
+#blocoesquerda{
     font-size: 55px;
     font-weight: bold;
     font-family: Helvetica;
@@ -22,8 +23,56 @@ body{
     color: black;
 }
 
-#direita{
+#blocodireita{
     background: white;
+    
+}
+
+#user{
+    color: #737373;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#pass{
+    color: #737373;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+#btnsignin{
+    background: #1877F2;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #1877F2;
+    margin: 5px;
+    font-size: 15px;
+}
+
+#forgot{
+    color: #1877F2;
+    font-family: normal;
+    font-size: 16px;
+    text-align: center;
+}
+#forgot:hover{
+    /*underline the text*/
+}
+
+#btnsignup{
+    background: #36A420;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #36A420;
+    margin: 5px;
+    font-size: 15px;
 }
 
 footer{
