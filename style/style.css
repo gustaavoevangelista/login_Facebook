@@ -10,9 +10,11 @@ body{
     align-items: center;
     justify-content: space-between;
     align-content: center;
-    width: 70%;
+    width: 60%;
     height: 70vh;
-    gap: 8rem;
+    margin-left: 200px;
+    gap: 4rem;
+    
     
 }
 
@@ -26,20 +28,24 @@ body{
 }
 
 .texto{
-    font-size: 25px;
+    font-size: 27px;
     color: black;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 .inputs{
-    background: white;
-    border: 1px solid lightgray;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.27) ;
-    height: 300px;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.27) ;
+    height: 320px;
+    margin-bottom: 30px;
+    width: 400px;
     
     
 }
@@ -48,16 +54,21 @@ body{
     color: #737373;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid rgba(211, 211, 211, 0.526);
+    width: 350px;
+    height: 25px;
 }
+
 
 #pass{
     color: #737373;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid rgba(211, 211, 211, 0.526);
+    width: 350px;
+    height: 25px;
 }
 
 
@@ -68,24 +79,32 @@ body{
     padding: 10px;
     border-radius: 5px;
     border-color: #1877F2;
-    margin: 5px;
+    margin: 10px;
     font-size: 15px;
+    width: 370px;
     
-    
-
 }
+
+#btnsignin:hover{
+    cursor: pointer;
+    background-color: #1468d6;
+}
+
 
 #forgot{
     color: #1877F2;
     font-family: normal;
     font-size: 16px;
     text-align: center;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.526);
+    padding-bottom: 10px;
+    width: 350px;
 }
 #forgot:hover{
-    /*underline the text*/
-    
-
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 
 #btnsignup{
     background: #36A420;
@@ -94,13 +113,58 @@ body{
     padding: 10px;
     border-radius: 5px;
     border-color: #36A420;
-    margin: 5px;
+    margin-bottom: 5px;
     font-size: 15px;
-      
+    width: 150px;
+}
+
+
+
+#btnsignup:hover{
+    cursor: pointer;
+    background-color: #2e881c;
+}
+
+.marketing{
+    font-size: 14px;
+    margin-left: 45px;
 }
 
 footer{
     color: #737373;
     font-size: 12px;
+    margin-left: 200px;
     
+}
+
+
+@media (max-width: 1236px){
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: #F0F2F5;
+        display: block;
+        margin-right: 50px;
+    }
+
+    .wrapper{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputs{
+        width: auto;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
