@@ -1,0 +1,68 @@
+body{
+    font-family: Helvetica;
+    margin: auto;
+    margin-top: 25vh;
+    width: 400px;
+    height: 400px;
+    background: #F0F2F5;
+}
+
+
+
+.border-register{
+    border: 1px solid lightgray;
+}
+
+
+#name{
+    border: 1px solid lightgray;
+    margin-top: 5px;
+    width: 300px;
+}
+
+#mobile-no{
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    width: 240px;
+}
+
+#email{
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    width: 299px;
+}
+
+#password{
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    width: 275px;
+}
+
+#confirm-pass{
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    width: 185px;
+}
+
+.btn-register{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+#btn-register{
+    color: white;
+    background-color: #36A420;
+    font-weight: bold;
+    padding: 10px;
+    border-color: #36A420;
+    border-radius: 5px;
+}
+
+#btn-register:hover{
+    cursor: pointer;
+    background-color: #297e18;
+}
