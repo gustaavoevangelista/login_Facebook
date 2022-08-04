@@ -10,7 +10,7 @@ function login(){
 
 
 function register(){
-    //go to a sign up page
+    
 
 }
 

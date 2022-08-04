@@ -8,44 +8,14 @@ body{
 }
 
 
-
 .border-register{
     border: 1px solid lightgray;
 }
 
-
-#name{
-    border: 1px solid lightgray;
-    margin-top: 5px;
-    width: 300px;
-    height: 20px;
-}
-
-#mobile-no{
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    width: 240px;
-    height: 20px;
-}
-
 #email{
     border: 1px solid lightgray;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 299px;
-    height: 20px;
-}
-
-#password{
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    width: 275px;
-    height: 20px;
-}
-
-#confirm-pass{
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    width: 185px;
     height: 20px;
 }
 
@@ -59,11 +29,11 @@ body{
 #answer{
     border: 1px solid lightgray;
     margin-top: 15px;
-    width: 290px;
+    width: 258px;
     height: 20px;
 }
 
-.btn-register{
+.submit{
     margin-top: 20px;
     display:flex;
     justify-content: center;
@@ -72,16 +42,24 @@ body{
     
 }
 
-#btn-register{
+#submit{
     color: white;
     background-color: #36A420;
     font-weight: bold;
-    padding: 10px;
+    padding: 9px;
     border-color: #36A420;
     border-radius: 5px;
 }
 
-#btn-register:hover{
+#submit:hover{
     cursor: pointer;
     background-color: #297e18;
+}
+
+.mensagem{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
