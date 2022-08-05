@@ -1,19 +1,13 @@
-function login(){
-    var user = document.getElementById('user');
-    var pass = document.getElementById('pass');
+const mysql = require ('mysql')
 
-    //if user.value and pass.value exist 
-    //go to a new welcome page
+const connection = mysql.createConnection({
+    host:'localhost',
+    user:'gustavo',
+    password: '12345',
+    database: 'facebook_db'
+})
 
-    //else call register()
-}
-
-
-function register(){
-    
-
-}
-
-function recover(){
-    //go to a recover password page
-}
+connection.connect((err) => {
+    if(err) throw err;
+    console.log('Connected!');
+})

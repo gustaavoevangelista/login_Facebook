@@ -49,19 +49,6 @@ body{
     height: 20px;
 }
 
-#question{
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    width: 235px;
-    height: 20px;
-}
-
-#answer{
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    width: 290px;
-    height: 20px;
-}
 
 .btn-register{
     margin-top: 20px;

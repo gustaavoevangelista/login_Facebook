@@ -1,4 +1,21 @@
 {
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "In this project I will recreate the facebook login page using HTML, CSS and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustaavoevangelista/login_Facebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustaavoevangelista/login_Facebook/issues"
+  },
+  "homepage": "https://github.com/gustaavoevangelista/login_Facebook#readme",
   "dependencies": {
     "mysql": "^2.18.1"
   }
