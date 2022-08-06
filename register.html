@@ -21,7 +21,7 @@
         
                 <div class="mobile-no">
                     Mobile number
-                    <input type="text" name="mobile-no" id="mobile-no">
+                    <input type="text" name="mobile-no" id="mobile-no" placeholder="+35199999999">
                     
                 </div>
         
@@ -37,23 +37,24 @@
                    
                 </div>
         
-                <div class="confirm-pass">
+                <div class="confirm_pass">
                     Confirm your password
-                    <input type="password" name="confirm-pass" id="confirm-pass">
+                    <input type="password" name="confirm_pass" id="confirm_pass">
                 </div>
 
 
                 <div class="btn-register">
-                    <a href="login.html">
-                        <input type="button" value="REGISTER" id="btn-register">
+                    <a id="redirect">
+                        <input type="button" value="REGISTER" id="btn-register" onclick="register()">
                     </a>
                 </div>
 
             </div>
         </fieldset>
 
-        
-       
     </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/connection.js"></script>
 </body>
 </html>
