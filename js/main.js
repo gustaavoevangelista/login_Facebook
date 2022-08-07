@@ -1,19 +1,30 @@
-function register(){
-    var name = document.getElementById('name')
-    var mobile_no = document.getElementById('mobile_no')
-    var email = document.getElementById('email')
-    var password = document.getElementById('password')
-    var confirm_pass = document.getElementById('confirm_pass')
-    var redirect = document.getElementById('redirect')
+import {new_register} from './connection.js'
 
-    if ((name.value.length == 0)  || (mobile_no.value.length == 0) || (email.value.length == 0) || (password.value.length == 0) || (confirm_pass.value.length == 0 )){
+
+function register(){
+    var n = document.getElementById('name')
+    var m = document.getElementById('mobile_no')
+    var e = document.getElementById('email')
+    var p = document.getElementById('password')
+    var c = document.getElementById('confirm_pass')
+    var r = document.getElementById('redirect')
+
+    var name = n.value
+    var mobile_no = m.value
+    var email = e.value
+    var password = p.value
+    var confirm_pass = c.value
+    var redirect = r.value
+    
+    if ((name.length == 0)  || (mobile_no.length == 0) || (email.length == 0) || (password.length == 0) || (confirm_pass.length == 0 )){
         alert('Please, fill in all fields.')
     }
 
     else{
-        if(password.value == confirm_pass.value){
-            //new_register(name.value, mobile_no.value, email.value)
-            redirect.href = 'login.html'
+        if(password == confirm_pass){
+            alert('password matches')
+            new_register(name, mobile_no, email, password)
+            
         }
     }
 
