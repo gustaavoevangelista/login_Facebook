@@ -2,19 +2,19 @@ import {new_register} from './connection.js'
 
 
 function register(){
-    var n = document.getElementById('name')
-    var m = document.getElementById('mobile_no')
-    var e = document.getElementById('email')
-    var p = document.getElementById('password')
-    var c = document.getElementById('confirm_pass')
-    var r = document.getElementById('redirect')
+    let n = document.getElementById('name')
+    let m = document.getElementById('mobile_no')
+    let e = document.getElementById('email')
+    let p = document.getElementById('password')
+    let c = document.getElementById('confirm_pass')
+    let r = document.getElementById('redirect')
 
-    var name = n.value
-    var mobile_no = m.value
-    var email = e.value
-    var password = p.value
-    var confirm_pass = c.value
-    var redirect = r.value
+    let name = n.value
+    let mobile_no = m.value
+    let email = e.value
+    let password = p.value
+    let confirm_pass = c.value
+    
     
     if ((name.length == 0)  || (mobile_no.length == 0) || (email.length == 0) || (password.length == 0) || (confirm_pass.length == 0 )){
         alert('Please, fill in all fields.')
@@ -28,5 +28,22 @@ function register(){
         }
     }
 
+}
 
+
+function recover(){
+    let e = document.getElementById('email')
+
+    let email = e.value
+    
+
+    if (email.length == 0){
+        alert('Please fill in the email field.')
+    }
+
+    else {
+        // if email isnt registered: no email msg
+
+        //else: welcome page
+    }
 }

@@ -26,6 +26,15 @@ function new_register(new_name, new_mobile, new_email, new_password){
     
 }
 
+function recover_pass(email){
+    var recover_pass = {email: email}
+    connection.query('SELECT email FROM register WHERE email LIKE', recover_pass, (err, res) => {
+        if (err) throw err
+
+    })
+
+}
+
 connection.end((err) => {})
 
 
