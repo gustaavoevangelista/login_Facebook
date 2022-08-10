@@ -1,5 +1,5 @@
-//var mysql = require ('mysql')
-import mysql from './mysql'
+var mysql = require ('mysql')
+//import mysql from './mysql'
 
 var connection = mysql.createConnection({
     host:'localhost',
@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
 connection.connect((err) => {
     if(err) {
-        console.log('Error connecting to database')
+        console.log('Error when connecting to database')
         return;
     }
     console.log('Connection established!')

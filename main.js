@@ -1,14 +1,14 @@
-import {new_register} from './connection.js'
+//import {new_register} from './connection.js'
 
+let r = document.getElementById('btn_register')
 
-function register(){
+r.addEventListener("click", function register(){
     let n = document.getElementById('name')
     let m = document.getElementById('mobile_no')
     let e = document.getElementById('email')
     let p = document.getElementById('password')
     let c = document.getElementById('confirm_pass')
-    let r = document.getElementById('redirect')
-
+    
     let name = n.value
     let mobile_no = m.value
     let email = e.value
@@ -23,19 +23,20 @@ function register(){
     else{
         if(password == confirm_pass){
             alert('password matches')
-            new_register(name, mobile_no, email, password)
+            //new_register(name, mobile_no, email, password)
             
         }
     }
+})
 
-}
 
 
-function recover(){
+let s = document.getElementById('submit')
+
+s.addEventListener("click", function recover(){
     let e = document.getElementById('email')
 
     let email = e.value
-    
 
     if (email.length == 0){
         alert('Please fill in the email field.')
@@ -46,4 +47,5 @@ function recover(){
 
         //else: welcome page
     }
-}
+})
+    

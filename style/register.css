@@ -50,7 +50,7 @@ body{
 }
 
 
-.btn-register{
+.btn_register{
     margin-top: 20px;
     display:flex;
     justify-content: center;
@@ -59,7 +59,7 @@ body{
     
 }
 
-#btn-register{
+#btn_register{
     color: white;
     background-color: #36A420;
     font-weight: bold;
@@ -68,7 +68,7 @@ body{
     border-radius: 5px;
 }
 
-#btn-register:hover{
+#btn_register:hover{
     cursor: pointer;
     background-color: #297e18;
 }
