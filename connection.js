@@ -2,10 +2,10 @@ var mysql = require ('mysql')
 //import mysql from './mysql'
 
 var connection = mysql.createConnection({
-    host:'localhost',
-    user:'gustavo',
-    password: '12345',
-    database: 'facebook_db'
+    host: "t07cxyau6qg7o5nz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "acgppv4kq0r2kf7g",
+    password: "w887c6ht43md1yp7",
+    database: "mf4l93f00rg09knt"
 })
 
 connection.connect((err) => {
