@@ -1,4 +1,5 @@
-//import {new_register} from './connection.js'
+import {new_register} from './connection.js'
+import {recover_pass} from './connection.js'
 
 let r = document.getElementById('btn_register')
 
@@ -45,7 +46,7 @@ s.addEventListener("click", function recover(){
     else {
         // if email isnt registered: no email msg
 
-        //else: welcome page
+        //else: welcome page recover_pass()
     }
 })
     
