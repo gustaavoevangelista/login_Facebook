@@ -2,7 +2,9 @@ const mysql = require ("mysql")
 //import mysql from './mysql'
 
 const express = require("express")
-const users = require("./users_data")
+const register_new_user = require("./users_data")
+const login_user = require("./users_data")
+const recover_pass = require("./users_data")
 
 const app = express()
 app.use(express.json())
@@ -12,21 +14,16 @@ app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)
 })
 
-app.get('/', (req , res) =>{
-    return res.send('Welcome Fulano!')  // instead of "fulano" try to select the name of user
-})
 
-app.get('/users', (req, res) => res.send(users))
+app.get('/users_data/:id', login_user)
 
-app.get('/users/:id', (req, res) => {
-    const userId = req.params.id
-    const user = users.find(user => user.id === parseInt(userId))
-    return res.send(user)
-})
+app.post('/users_data' , register_new_user)
+
+app.get('/users_data', recover_pass)
 
 //http-status-codes
 
-app.post('/users', (req, res) => {
+/*app.post('/users', (req, res) => {
     // const {id, name, mobile_no, email, password} = req.body
     const newUser = req.body
     // console.log(req.body)
@@ -62,7 +59,7 @@ app.delete('/user/:id', (req, res) => {
     })
 
     return res.status(204).send()
-})
+})*/
 
 //connecting to database
 var connection = mysql.createConnection({
@@ -81,7 +78,7 @@ connection.connect((err) => {
     console.log('Database connected!')
 })
 
-//method to insert new user in database
+/*//method to insert new user in database
 function new_register(new_name, new_mobile, new_email, new_password){
     var new_register = {name: new_name, mobile_no: new_mobile, email: new_email, password: new_password}
     connection.query('INSERT INTO register SET ?', new_register, (err, res) => {
@@ -106,4 +103,4 @@ function recover_pass(email){
 
 
 module.exports = new_register()
-module.exports = recover_pass()
+module.exports = recover_pass()*/

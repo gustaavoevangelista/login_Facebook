@@ -1,9 +1,10 @@
-import {new_register} from './connection.js'
-import {recover_pass} from './connection.js'
+import {register_new_user} from '.js/connection.js'
+import {recover_pass} from '.js/connection.js'
+import {login_user} from '.js/connection.js'
 
 let r = document.getElementById('btn_register')
 
-r.addEventListener("click", function register(){
+r.addEventListener("click", function signup(){
     let n = document.getElementById('name')
     let m = document.getElementById('mobile_no')
     let e = document.getElementById('email')
@@ -24,7 +25,7 @@ r.addEventListener("click", function register(){
     else{
         if(password == confirm_pass){
             alert('password matches')
-            new_register(name, mobile_no, email, password)
+            register_new_user()
             
         }
     }
@@ -50,3 +51,23 @@ s.addEventListener("click", function recover(){
     }
 })
     
+
+let l = document.getElementById('btnsignin')
+
+l.addEventListener("click", function login(){
+    let e = document.getElementById('user')
+    let p = document.getElementById('pass')
+
+    let email = e.value
+    let password = p.value
+
+    if ((email.length == 0) || (password.length == 0)){
+        alert('Please, fill in all fields.')
+    }
+
+    else {
+        // if email and password dont match -> alert error
+        //else login_user()
+    }
+
+})
