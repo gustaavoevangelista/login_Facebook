@@ -1,6 +1,7 @@
-import {register_new_user} from '.js/connection.js'
-import {recover_pass} from '.js/connection.js'
-import {login_user} from '.js/connection.js'
+import {register_new_user} from './connection.js'
+import {recover_pass} from './connection.js'
+import {login_user} from './connection.js'
+import {connection} from './connection.js'
 
 let r = document.getElementById('btn_register')
 

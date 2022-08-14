@@ -104,3 +104,5 @@ function recover_pass(email){
 
 module.exports = new_register()
 module.exports = recover_pass()*/
+
+module.exports = connection
