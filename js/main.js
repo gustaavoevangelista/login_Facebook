@@ -26,7 +26,7 @@ r.addEventListener("click", function signup(){
     else{
         if(password == confirm_pass){
             alert('password matches')
-            register_new_user()
+            register_new_user
             
         }
     }
