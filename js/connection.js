@@ -1,23 +1,22 @@
-const mysql = require ("mysql")
+// const mysql = require ("mysql")
 //import mysql from './mysql'
 
-const express = require("express")
-const register_new_user = require("./users_data")
-const login_user = require("./users_data")
-const recover_pass = require("./users_data")
+// const express = require('express')
+// const register_new_user = require('./users_data')
+// const login_user = require('./users_data')
+// const recover_pass = require('./users_data')
 
 const app = express()
 app.use(express.json())
 const PORT = process.env.PORT || 5500
 
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`)
+	console.log(`Server running at http://localhost:${PORT}`)
 })
-
 
 app.get('/users_data/:id', login_user)
 
-app.post('/users_data' , register_new_user)
+app.post('/users_data', register_new_user)
 
 app.get('/users_data', recover_pass)
 
@@ -63,19 +62,19 @@ app.delete('/user/:id', (req, res) => {
 
 //connecting to database
 var connection = mysql.createConnection({
-    host: "t07cxyau6qg7o5nz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user: "acgppv4kq0r2kf7g",
-    password: "w887c6ht43md1yp7",
-    database: "mf4l93f00rg09knt"
+	host: 't07cxyau6qg7o5nz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+	user: 'acgppv4kq0r2kf7g',
+	password: 'w887c6ht43md1yp7',
+	database: 'mf4l93f00rg09knt'
 })
 
 // testing if it's connected
 connection.connect((err) => {
-    if(err) {
-        console.log('Error when connecting to database')
-        return;
-    }
-    console.log('Database connected!')
+	if (err) {
+		console.log('Error when connecting to database')
+		return
+	}
+	console.log('Database connected!')
 })
 
 /*//method to insert new user in database
