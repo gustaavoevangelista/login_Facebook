@@ -37,7 +37,7 @@ r.addEventListener('click', function signup() {
 		if (password == confirm_pass) {
 			alert('password matches')
 			console.log(data)
-			fetch('https://imcapi.herokuapp.com/users', {
+			fetch('http://localhost:8081/users', {
 				method: 'POST',
 				body: JSON.stringify(data),
 				headers: { 'Content-type': 'application/json;charset=UTF-8' }
