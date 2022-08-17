@@ -22,9 +22,11 @@ l.addEventListener('click', function signin() {
         console.log(data)
         fetch('http://localhost:8081/users', {
 				method: 'GET',
-				//body: JSON.stringify(data),
+				body: JSON.stringify(data),
 				headers: { 'Content-type': 'application/json;charset=UTF-8' }
 			})
+
+        
         
     }   
 })
