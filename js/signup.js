@@ -20,6 +20,7 @@ r.addEventListener('click', function signup() {
 		password: password
 	}
 
+	//validation: fields cant be empty
 	if (
 		name.length == 0 ||
 		mobile_no.length == 0 ||
@@ -29,15 +30,18 @@ r.addEventListener('click', function signup() {
 	) {
 		alert('Please, fill in all fields.')
 	} else {
+		//verify if the password and confirm_pass have the same value
 		if (password == confirm_pass) {
-			alert('Password matches')
+			alert('Passwords match')
 			console.log(data)
+			//write the data in db
 			fetch('http://localhost:8081/users', {
 				method: 'POST',
 				body: JSON.stringify(data),
 				headers: { 'Content-type': 'application/json;charset=UTF-8' }
 	
 			}).then(res => {
+				//redirect to "feed page"
 				if (res.redirected) {
 					const redirectUrl = res.url;
 

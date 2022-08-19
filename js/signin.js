@@ -12,21 +12,24 @@ l.addEventListener('click', function signin() {
         password: password
     } 
 
+    //validation: fields cant be empty
     if (email.length == 0 || password.length == 0) {
         alert('Please, fill in all fields.')
     } 
     else {
-        //if email and password dont match -> alert error
-
-        //else:
         console.log(data)
+        //search for data in database
         fetch('http://localhost:8081/users', {
 				method: 'GET',
-				body: JSON.stringify(data),
+				//body: JSON.stringify(data),
 				headers: { 'Content-type': 'application/json;charset=UTF-8' }
-			})
+			}).then(res => {
+				//redirect to "feed page"
+				if (res.redirected) {
+					const redirectUrl = res.url;
 
-        
-        
+					window.location.href = redirectUrl;
+				}
+			})
     }   
 })
