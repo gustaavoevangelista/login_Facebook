@@ -37,6 +37,12 @@ r.addEventListener('click', function signup() {
 				body: JSON.stringify(data),
 				headers: { 'Content-type': 'application/json;charset=UTF-8' }
 	
+			}).then(res => {
+				if (res.redirected) {
+					const redirectUrl = res.url;
+
+					window.location.href = redirectUrl;
+				}
 			})
 			
 		}
